@@ -17,9 +17,9 @@
 | import './routes/customer'
 |
 */
-
 import Route from '@ioc:Adonis/Core/Route'
+import Database from '@ioc:Adonis/Lucid/Database'
 
 Route.get('/hello', async () => {
-  return { message: 'hello world' }
+  return Database.from('users').select('*')
 })
