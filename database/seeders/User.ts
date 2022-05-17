@@ -3,20 +3,20 @@ import User from 'App/Models/User'
 
 export default class UserSeeder extends BaseSeeder {
   public async run() {
-    const uniqueKey = 'eMail'
+    const uniqueKey = 'email'
     // Write your database queries inside the run method
     await User.updateOrCreateMany(uniqueKey, [
       {
-        eMail: 'blebla@email.com',
-        password: 'secret',
+        email: 'blebla@email.com',
+        password: 'admin',
       },
       {
-        eMail: 'zeza@email.com',
-        password: 'supersecret',
+        email: 'zeza@email.com',
+        password: 'admin',
       },
       {
-        eMail: 'outreoze@email.com',
-        password: 'supersecret',
+        email: 'outreoze@email.com',
+        password: 'admin',
       },
     ])
   }
