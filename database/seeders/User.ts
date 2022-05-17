@@ -7,15 +7,15 @@ export default class UserSeeder extends BaseSeeder {
     // Write your database queries inside the run method
     await User.updateOrCreateMany(uniqueKey, [
       {
-        eMail: 'blabla@email.com',
+        eMail: 'blebla@email.com',
         password: 'secret',
       },
       {
-        eMail: 'ze@email.com',
+        eMail: 'zeza@email.com',
         password: 'supersecret',
       },
       {
-        eMail: 'outroze@email.com',
+        eMail: 'outreoze@email.com',
         password: 'supersecret',
       },
     ])
