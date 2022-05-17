@@ -18,10 +18,10 @@
 |
 */
 import Route from '@ioc:Adonis/Core/Route'
-import Database from '@ioc:Adonis/Lucid/Database'
+import 'App/Modules/User/routes'
 
-Route.get('/hello', async () => {
-  return Database.from('users').select('*')
+Route.get('/', async () => {
+  return 'Hello world'
 })
 
 Route.post('login', 'AuthController.login')
